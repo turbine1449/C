@@ -26,3 +26,12 @@
 ## 進捗状況
     - <言い訳>21:45に帰宅。無理ゲー。
     - 昨日の文字化けの件は記事が見つかったので直せそう。
+    - https://qiita.com/y-w/items/614843b259c04bb91495
+    - https://www.mathkuro.com/vs-code/vscode-sjis-to-utf8/
+
+# 2020/07/04
+
+## 進捗状況
+    - 
+
+## 感想
