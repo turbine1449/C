@@ -1,8 +1,20 @@
 #include <stdio.h>
 
 int main(void){
-    
-    printf("%d円\n",100);
+    /*
+    printf("%d+",100);
+    printf("%d=",200);
+    printf("%d\n",300);
+    */
+   //printf("%d",100+200);
+   /*
+   printf("%d\n",10 + 3);
+   printf("%d\n",10 - 3);
+   printf("%d\n",10 * 3);
+   printf("%d\n",10 / 3);
+   printf("%d\n",10 % 3);
+   */
+  printf("%d\n", (1+100)*100/2);
 
 
     return 0;
