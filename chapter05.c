@@ -1,18 +1,24 @@
 #include <stdio.h>
 
 int main(void){
+
+    printf("%f\n",1.03 * 9);
+    printf("%d\n",1.03 * 9);
     
-    int left;
-    int right;
+    //キャスト変換
+    printf("%d\n",(int)(1.03 * 9));
+    
+    /*
+    double left,right;
     left = 10;
     right = 3;
 
-    printf("%d\n",left + right);
-    printf("%d\n",left - right);
-    printf("%d\n",left * right);
-    printf("%d\n",left / right);
-    printf("%d\n",left % right);
-
+    printf("%f\n",left + right);
+    printf("%f\n",left - right);
+    printf("%f\n",left * right);
+    printf("%f\n",left / right);
+    //printf("%d\n",left % right);
+    */
 
 
 
@@ -47,5 +53,14 @@ int main(void){
 
 ++　インクリメント
 --  デクリメント
+
+intは整数を入れる型、doubleは実数を入れる型。使い方は同じ。
+※%(余算)は整数型でないとできないようだ。
+
+整数と実数の混合計算の答えは実数に変換される。
+そのまま%dで表示させると全然違う数字になる。
+
+実数の計算を整数で表示させたい時もある。
+そんな時はキャスト変換。強制的に型を変換する機能。
 
 */
