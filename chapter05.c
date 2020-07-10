@@ -2,12 +2,40 @@
 
 int main(void){
 
+    int a = 198,b = 138, sum;
+    double tax = 1.05;
+
+    sum = (int)(a + b*2)* tax;
+
+    printf("おつりは%d円\n",1000-sum);
+
+    /*//実数の桁揃え
+    double pi = 3.14159;
+    //%全体桁数.小数桁数f
+    //※全体桁数は小数の桁数と小数点を含む
+    printf("%6.2f\n",pi);
+    printf("123456\n");
+    */
+
+
+    /*//桁揃え
+    int a = 1000, b = 500, c = 3;
+
+    //※%05dとすると空白の代わりに0が入るよ
+    printf("Aは%5dです。\n",a);
+    printf("Bは%5dです。\n",b);
+    printf("Cは%5dです。\n",c);
+
     printf("%f\n",1.03 * 9);
     printf("%d\n",1.03 * 9);
+   */ 
     
-    //キャスト変換
+    
+    /*//キャスト変換
     printf("%d\n",(int)(1.03 * 9));
-    
+    */
+
+
     /*
     double left,right;
     left = 10;
@@ -53,7 +81,8 @@ int main(void){
 
 ++　インクリメント
 --  デクリメント
-
+*/
+/*
 intは整数を入れる型、doubleは実数を入れる型。使い方は同じ。
 ※%(余算)は整数型でないとできないようだ。
 
