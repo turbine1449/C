@@ -1,42 +1,54 @@
 #include <stdio.h>
 int main(void){
 
+    int score;
+    printf("点数を入力してください:");
+    scanf("%d",&score);
+    if (score > 100) {
+        printf("入力が100より大きいので修正します。\n");
+        score = 100;
+    }
+    printf("点数は%d点です。\n",score);
+    
+
+
+    /*
+    int score;
+    printf("点数を入力してください：");
+    scanf("%d",&score);
+    if (score > 100) printf("入力が100より大きいので修正します。\n");
+    if (score > 100) score = 100;
+    printf("点数は%d点です。\n",score);
+
+
+
+    
     int suuti;
     scanf("%d",&suuti);
     if (suuti >= 8 && suuti <= 12) printf("8～12の間です。");
     if (!(suuti >= 8 && suuti <= 12)) printf("8～12の間ではありません。");
 
 
-    /*
+    
     int suuti;
     scanf("%d",&suuti);
     if (suuti == 10) printf("入力値は10です。\n");
     if (suuti >  10) printf("入力値は10より大きいです。\n");
     if (suuti <  10) printf("入力値は10より小さいです。\n");
-    */
-
-    /*
+    
     int suuti;
     scanf("%d",&suuti);
     if (suuti == 10) printf("入力値は10です。\n");
     if (suuti != 10) printf("入力値は10ではありません。\n");
-    */
-
-
-    /*
+    
     int suuti;
     scanf("%d",&suuti);
     if (suuti == 10) printf("入力値は10です。\n");
-    */
-
-    /*
+    
     int suuti;
     scanf("%d",&suuti);
     if (suuti - 10) printf("入力された数値は10ではありません\n");
-    */
-
-
-    /*
+    
     int suuti = 10;
     if (suuti) printf("%d\n",suuti);
     */
@@ -81,6 +93,12 @@ if文では、指定された数値が真である(数値が0以外の)場合だ
 &&      AND     右と左の条件が両方真        左右どちらかでも偽
 ||      OR      左右のどちらかでも真        左右が両方真
 !       NOT     条件が偽                    条件が真
+
+
+# ブロック文
+- {}で囲むことで、複数の分をまとめる方法。
+
+
 
 
 */
