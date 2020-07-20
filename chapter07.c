@@ -1,6 +1,19 @@
 #include <stdio.h>
 int main(void){
 
+    int year,rest;
+    printf("西暦を入力してください：");
+    scanf("%d",&year);
+
+    rest = year % 4;
+
+    if (rest == 0) printf("夏季オリンピック開催年\n");
+    if (rest == 2) printf("冬季オリンピック開催年\n");
+    if (rest != 0 && rest != 2) printf("なんもない年\n");
+
+
+
+    /*
     int score;
     printf("点数を入力してください:");
     scanf("%d",&score);
@@ -12,7 +25,7 @@ int main(void){
     
 
 
-    /*
+    
     int score;
     printf("点数を入力してください：");
     scanf("%d",&score);
