@@ -1,7 +1,47 @@
 #include <stdio.h>
 
 int main(void){
+    int age;
+    printf("年齢：");
+    scanf("%d",&age);
+    if (age <= 3) {
+        printf("幼児：無料\n");
+    } else if (age <= 12){
+            printf("子供：250円\n");
+    } else {
+            printf("大人：400円\n");
+        }
 
+
+
+/*
+    int age;
+    printf("年齢：");
+    scanf("%d",&age);
+    if (age <= 3) {
+        printf("幼児：無料\n");
+    } else {
+        if (age <= 12){
+            printf("子供：250円\n");
+        } else {
+            printf("大人：400円\n");
+        }
+    }
+
+
+/*
+    int age;
+    printf("年齢：");
+    scanf("%d",&age);
+    if (age <= 3) printf("幼児：無料/n");
+    if (age >= 4 && age <= 12) printf("子供：250円\n");
+    if (age >= 13) printf("大人：400円\n");
+
+
+
+
+
+/*
     int suuti;
     scanf("%d",&suuti);
     if (suuti == 10)
@@ -9,7 +49,7 @@ int main(void){
     else 
         printf("入力値は10ではありません。");
 
-
+*/
 
 
     return 0;
