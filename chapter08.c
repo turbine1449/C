@@ -2,6 +2,54 @@
 
 int main(void){
 
+    int month;
+    printf("陰暦表示プログラム\n");
+    printf("1～12までの数字を入力してください:");
+    scanf("%d",&month);
+    switch (month){
+        case 1:
+            printf("%d月は睦月（むつき）と呼びます。",month);
+            break;
+        case 2:
+            printf("%d月は如月（きさらぎ）と呼びます。",month);
+            break;
+        case 3:
+            printf("%d月は弥生（やよい）と呼びます。",month);
+            break;
+        case 4:
+            printf("%d月は卯月（うづき）と呼びます。",month);
+            break;
+        case 5:
+            printf("%d月は皐月（さつき）と呼びます。",month);
+            break;
+        case 6:
+            printf("%d月は水無月（みなづき）と呼びます。",month);
+            break;
+        case 7:
+            printf("%d月は文月（ふみづき）と呼びます。",month);
+            break;
+        case 8:
+            printf("%d月は葉月（はづき）と呼びます。",month);
+            break;
+        case 9:
+            printf("%d月は長月（ながつき）と呼びます。",month);
+            break;
+        case 10:
+            printf("%d月は神無月（かんなづき）と呼びます。",month);
+            break;
+        case 11:
+            printf("%d月は霜月（しもつき）と呼びます。",month);
+            break;
+        case 12:
+            printf("%d月は師走（しわす）と呼びます。",month);
+            break;
+        default:
+            printf("1～12って言ってんだよ。ボケが。\n");
+            break;
+    }
+
+
+/*
     int no;
     scanf("%d",&no);
     switch (no){
