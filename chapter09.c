@@ -2,6 +2,18 @@
 
 int main(void){
 
+    int x,y;
+
+    for(x=1;x<=9;x++){
+        for(y=1;y<=9;y++){
+            printf("%2d ×%2d =%2d ",x,y,x*y);
+        }
+        printf("\n");
+    }
+
+
+
+/*
     int i;
     for(i =1;i <= 10;i++){
         printf("%d\n",i);
