@@ -2,6 +2,20 @@
 
 int main (void){
 
+    int point;
+    
+
+    do {
+        printf("点数を入力してください。:");
+        scanf("%d",&point);
+
+    }while (point < 0 || point > 100);
+
+    printf("%d点",point);
+
+
+
+/*
     int r;
     double s;
 
