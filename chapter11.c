@@ -1,8 +1,8 @@
 #include <stdio.h>
-int sum(void);
+int sum(int,int);
 int main(void){
 
-    sum();
+    sum(50,100);
 
 
 
@@ -10,8 +10,8 @@ int main(void){
 
 }
 
-int sum(void){
-    printf("%d\n",(1+100)*100/2);
+int sum(int min,int max){
+    printf("%d\n",(min+max)*(max-min+1)/2);
 
     return 0;
 }
@@ -39,5 +39,7 @@ int sum(void){
 
 関数名、関数の型、引数の型、の3つを書いておく事で一覧を作成できる。
 この関数の一覧の書き方をプロトタイプ宣言という。
+
+
 
  */
