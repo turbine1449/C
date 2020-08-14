@@ -2,18 +2,19 @@
 int sum(int,int);
 int main(void){
 
-    sum(50,100);
-
-
-
+    int value;
+    value = sum(50,100);
+    printf("%d\n",value);
+    
     return 0;
 
 }
 
 int sum(int min,int max){
-    printf("%d\n",(min+max)*(max-min+1)/2);
+    int num;
+    num = (min+max)*(max-min+1)/2;
 
-    return 0;
+    return num;
 }
 
 /*
