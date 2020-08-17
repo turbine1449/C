@@ -1,20 +1,45 @@
 #include <stdio.h>
-int sum(int,int);
+int calc(int);
 int main(void){
 
-    int value;
-    value = sum(50,100);
-    printf("%d\n",value);
+    int value,num;
+    scanf("%d",&num);
+    value = calc(num);
+    
+    switch (value)
+    {
+    case 0:
+        printf("夏季オリンピック開催");
+        break;
+    
+    case 1:
+        printf("冬季オリンピック開催");
+        break;
+
+    default:
+        printf("なし");
+        break;
+    }
     
     return 0;
 
 }
 
-int sum(int min,int max){
-    int num;
-    num = (min+max)*(max-min+1)/2;
+int calc(int year){
+    int flag;
+    
+    if (year % 2 == 0){
+        if (year % 4 == 0){
+            flag = 0;
+        }else{
+            flag = 1;
+        }
 
-    return num;
+    }else{
+        flag = 2;
+    }
+
+    return flag;
 }
 
 /*
